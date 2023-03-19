@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CornerCutLayout">
+        <attr name="radiusTopStart" format="dimension" />
+        <attr name="radiusTopEnd" format="dimension" />
+        <attr name="radiusBottomStart" format="dimension" />
+        <attr name="radiusBottomEnd" format="dimension" />
+        <attr name="radiusSide" format="dimension" />
+        <attr name="cutHeight" format="dimension" />
+    </declare-styleable>
+</resources>

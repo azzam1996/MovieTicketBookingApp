@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@id/start_time"
+        motion:constraintSetEnd="@+id/next_time"
+        motion:duration="1000"
+        android:id="@+id/forward_time">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetStart="@+id/start_time"
+        motion:constraintSetEnd="@+id/previous_time"
+        android:id="@+id/backward_time">
+
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/previous_time">
+        <Constraint
+            android:id="@+id/time5"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:layout_marginTop="60dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <Constraint
+            android:id="@+id/time4"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time2"
+            motion:layout_constraintEnd_toStartOf="@id/time4"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time2"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="#f00"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time0"
+            motion:layout_constraintEnd_toStartOf="@id/time2"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time0"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/time1"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/start_time">
+
+        <Constraint
+            android:id="@+id/time5"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time4"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time4"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time3"
+            motion:layout_constraintEnd_toStartOf="@id/time5"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time3"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time1"
+            motion:layout_constraintEnd_toStartOf="@id/time3"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/time2"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/next_time">
+        <Constraint
+            android:id="@+id/time6"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time5"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time4"
+            motion:layout_constraintEnd_toStartOf="@id/time6"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time4"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toEndOf="@id/time2"
+            motion:layout_constraintEnd_toStartOf="@id/time4"
+            android:layout_marginTop="20dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/time3"
+            android:layout_marginTop="40dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/time1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_marginTop="60dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+    </ConstraintSet>
+
+</MotionScene>

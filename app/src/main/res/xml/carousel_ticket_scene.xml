@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@id/start_ticket"
+        motion:constraintSetEnd="@+id/next_ticket"
+        motion:duration="1000"
+        android:id="@+id/forward_ticket">
+        <KeyFrameSet>
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+    </Transition>
+
+    <Transition
+        motion:constraintSetStart="@+id/start_ticket"
+        motion:constraintSetEnd="@+id/previous_ticket"
+        android:id="@+id/backward">
+
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/previous_ticket">
+
+
+        <Constraint
+            android:id="@+id/ticket0"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:rotation="-6"
+            android:elevation="4dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="354"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket1"
+            android:layout_width="@dimen/ticket1_width"
+            android:layout_height="@dimen/ticket1_height"
+            android:elevation="6dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="0"
+            motion:layout_constraintCircleRadius="@dimen/ticket1_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket2"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:elevation="4dp"
+            android:rotation="6"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="6"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket3"
+            android:layout_width="@dimen/ticket3_width"
+            android:layout_height="@dimen/ticket3_height"
+            android:rotation="10"
+            android:elevation="2dp"
+            android:alpha="0"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="10"
+            motion:layout_constraintCircleRadius="@dimen/ticket3_circle_radius"/>
+
+    </ConstraintSet>
+
+
+    <ConstraintSet android:id="@+id/start_ticket">
+
+        <Constraint
+            android:id="@+id/ticket0"
+            android:layout_width="@dimen/ticket3_width"
+            android:layout_height="@dimen/ticket3_height"
+            android:rotation="-10"
+            android:alpha="0"
+            android:elevation="2dp"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="350"
+            motion:layout_constraintCircleRadius="@dimen/ticket3_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket1"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:rotation="-6"
+            android:elevation="4dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="354"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket2"
+            android:layout_width="@dimen/ticket1_width"
+            android:layout_height="@dimen/ticket1_height"
+            android:elevation="6dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="0"
+            motion:layout_constraintCircleRadius="@dimen/ticket1_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket3"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:elevation="4dp"
+            android:rotation="6"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="6"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket4"
+            android:layout_width="@dimen/ticket3_width"
+            android:layout_height="@dimen/ticket3_height"
+            android:rotation="10"
+            android:elevation="2dp"
+            android:alpha="0"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="10"
+            motion:layout_constraintCircleRadius="@dimen/ticket3_circle_radius"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/next_ticket">
+        <Constraint
+            android:id="@+id/ticket1"
+            android:layout_width="@dimen/ticket3_width"
+            android:layout_height="@dimen/ticket3_height"
+            android:rotation="-10"
+            android:alpha="0"
+            android:elevation="2dp"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="350"
+            motion:layout_constraintCircleRadius="@dimen/ticket3_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket2"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:rotation="-6"
+            android:elevation="4dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="354"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket3"
+            android:layout_width="@dimen/ticket1_width"
+            android:layout_height="@dimen/ticket1_height"
+            android:elevation="6dp"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="0"
+            motion:layout_constraintCircleRadius="@dimen/ticket1_circle_radius"/>
+
+        <Constraint
+            android:id="@+id/ticket4"
+            android:layout_width="@dimen/ticket2_width"
+            android:layout_height="@dimen/ticket2_height"
+            android:elevation="4dp"
+            android:rotation="6"
+            android:alpha="1"
+            motion:layout_constraintCircle="@+id/center"
+            motion:layout_constraintCircleAngle="6"
+            motion:layout_constraintCircleRadius="@dimen/ticket2_circle_radius"/>
+
+    </ConstraintSet>
+
+</MotionScene>

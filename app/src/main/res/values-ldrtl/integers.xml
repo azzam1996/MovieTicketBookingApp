@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="angle_rtl_180">180</integer>
+    <integer name="angle_rtl_90">270</integer>
+    <integer name="angle_rtl_45">225</integer>
+    <integer name="angle_rtl_minus_45">-225</integer>
+
+    <bool name="isRtl">true</bool>
+</resources>

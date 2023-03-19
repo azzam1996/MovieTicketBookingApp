@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="persian_indigo">#2E1371</color>
+    <color name="haiti">#130B2B</color>
+    <color name="bright_turquoise">#09FBD3</color>
+    <color name="jazzberry_jam">#B6116B</color>
+    <color name="hot_pink">#FE53BB</color>
+    <color name="charade">#21232F</color>
+    <color name="jumbo">#30767680</color>
+    <color name="gray">#ABABAF</color>
+    <color name="jumbo_1">#83767680</color>
+
+    <color name="persian_indigo_1">#AF2E1371</color>
+    <color name="hot_pink_1">#AFFE53BB</color>
+    <color name="san_marino_1">#AF5172B3</color>
+
+    <color name="bright_turquoise_1">#0009FBD3</color>
+    <color name="hot_pink_2">#00FE53BB</color>
+
+
+    <color name="everglade">#194234</color>
+    <color name="aquamarine">#60FFCA</color>
+
+    <color name="san_marino">#5172B3</color>
+
+    <color name="gray_2">#E0E0E0</color>
+    <color name="active_dot_color">#7C62D6</color>
+    <color name="non_active_dot_color">#44FFFFFF</color>
+    <color name="white_opacity">#44FFFFFF</color>
+    <color name="black_with_opacity">#99000000</color>
+    <color name="transparent_color">#01ffffff</color>
+</resources>

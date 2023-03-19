@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.azzam.movieticketbookingapp.presentation.homepage.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" />
+    <fragment
+        android:id="@+id/bookTicketFragment"
+        android:name="com.azzam.movieticketbookingapp.presentation.bookTicket.BookTicketFragment"
+        android:label="fragment_book_ticket"
+        tools:layout="@layout/fragment_book_ticket" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.azzam.movieticketbookingapp.presentation.ticket.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+</navigation>

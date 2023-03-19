@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="poster_height">500dp</dimen>
+    <dimen name="guideline_margin_top">200dp</dimen>
+    <dimen name="ticket_cut_radius">25dp</dimen>
+    <dimen name="ticket_cut_height">110dp</dimen>
+    <dimen name="ticket_barcode_height">38dp</dimen>
+
+    <dimen name="ticket1_width">200dp</dimen>
+    <dimen name="ticket1_height">360dp</dimen>
+    <dimen name="ticket1_circle_radius">200dp</dimen>
+
+    <dimen name="ticket2_width">175dp</dimen>
+    <dimen name="ticket2_height">314dp</dimen>
+    <dimen name="ticket2_circle_radius">195dp</dimen>
+
+    <dimen name="ticket3_width">150dp</dimen>
+    <dimen name="ticket3_height">290dp</dimen>
+    <dimen name="ticket3_circle_radius">180dp</dimen>
+
+    <dimen name="ticket_layout_min_height">500dp</dimen>
+</resources>

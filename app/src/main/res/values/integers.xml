@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+  <!-- time for sliding process: 3 seconds -->
+
+  <integer name="open_activity_time">500</integer>
+  <integer name="close_activity_time">500</integer>
+  <integer name="dialog_content_maxLines">4</integer>
+  <integer name="dialog_width_percent">80</integer>
+  <integer name="dialog_header_maxLines">1</integer>
+  <!--    changing dialog_plus_blur_radius value will change the blur effect's radius-->
+  <integer name="dialog_plus_blur_radius">15</integer>
+
+  <integer name="dialog_year_picker_weight">10</integer>
+  <integer name="dialog_month_picker_weight">10</integer>
+  <integer name="dialog_day_picker_weight">10</integer>
+
+  <integer name="angle_rtl_180">0</integer>
+  <integer name="angle_rtl_90">90</integer>
+  <integer name="angle_rtl_45">45</integer>
+  <integer name="angle_rtl_minus_45">-45</integer>
+
+  <bool name="isRtl">false</bool>
+</resources>
